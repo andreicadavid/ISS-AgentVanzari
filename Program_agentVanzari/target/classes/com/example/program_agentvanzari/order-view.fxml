@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.program_agentvanzari.OrderController">
+  <top>
+    <AnchorPane prefHeight="285.0" prefWidth="600.0" style="-fx-background-color: #fff9ea;" BorderPane.alignment="CENTER">
+      <children>
+        <TableView layoutX="30.0" layoutY="43.0" prefHeight="200.0" prefWidth="551.0" fx:id="tabelord">
+          <columns>
+            <TableColumn prefWidth="75.0" text="ID" />
+            <TableColumn prefWidth="75.0" text="LastName" />
+            <TableColumn prefWidth="75.0" text="FirstName" />
+            <TableColumn prefWidth="75.0" text="Adress" />
+            <TableColumn prefWidth="75.0" text="Postalcode" />
+            <TableColumn prefWidth="75.0" text="Email" />
+            <TableColumn prefWidth="75.0" text="PhoneNumber" />
+            <TableColumn prefWidth="51.0" text="Amount" />
+            <TableColumn prefWidth="49.0" text="Prd.id" />
+          </columns>
+        </TableView>
+      </children>
+    </AnchorPane>
+  </top>
+  <bottom>
+    <AnchorPane prefHeight="115.0" prefWidth="600.0" style="-fx-background-color: #ffeec3;" BorderPane.alignment="CENTER">
+      <children>
+        <TextField layoutX="14.0" layoutY="2.0" prefHeight="24.0" prefWidth="109.0" promptText="Last Name" style="-fx-background-color: transparent; -fx-border-color: #fff9ea; -fx-border-width: 0px 0px 2px;" fx:id="name">
+          <font>
+            <Font name="Bell MT" size="12.0" />
+          </font>
+        </TextField>
+        <TextField layoutX="14.0" layoutY="70.0" prefHeight="24.0" prefWidth="109.0" promptText="Postalcode" style="-fx-background-color: transparent; -fx-border-color: #fff9ea; -fx-border-width: 0px 0px 2px;" fx:id="codpostal">
+          <font>
+            <Font name="Bell MT" size="12.0" />
+          </font>
+        </TextField>
+        <TextField layoutX="14.0" layoutY="46.0" prefHeight="24.0" prefWidth="109.0" promptText="Adress" style="-fx-background-color: transparent; -fx-border-color: #fff9ea; -fx-border-width: 0px 0px 2px;" fx:id="adresa">
+          <font>
+            <Font name="Bell MT" size="12.0" />
+          </font>
+        </TextField>
+        <TextField layoutX="14.0" layoutY="24.0" prefHeight="24.0" prefWidth="109.0" promptText="First Name" style="-fx-background-color: transparent; -fx-border-color: #fff9ea; -fx-border-width: 0px 0px 2px;" fx:id="prenume">
+          <font>
+            <Font name="Bell MT" size="12.0" />
+          </font>
+        </TextField>
+        <TextField layoutX="136.0" layoutY="2.0" prefHeight="24.0" prefWidth="109.0" promptText="Email" style="-fx-background-color: transparent; -fx-border-color: #fff9ea; -fx-border-width: 0px 0px 2px;" fx:id="email">
+          <font>
+            <Font name="Bell MT" size="12.0" />
+          </font>
+        </TextField>
+        <TextField layoutX="136.0" layoutY="70.0" prefHeight="24.0" prefWidth="109.0" promptText="Product id" style="-fx-background-color: transparent; -fx-border-color: #fff9ea; -fx-border-width: 0px 0px 2px;" fx:id="idprodus">
+          <font>
+            <Font name="Bell MT" size="12.0" />
+          </font>
+        </TextField>
+        <TextField layoutX="136.0" layoutY="46.0" prefHeight="24.0" prefWidth="109.0" promptText="Amount" style="-fx-background-color: transparent; -fx-border-color: #fff9ea; -fx-border-width: 0px 0px 2px;" fx:id="cantitate">
+          <font>
+            <Font name="Bell MT" size="12.0" />
+          </font>
+        </TextField>
+        <TextField layoutX="136.0" layoutY="24.0" prefHeight="24.0" prefWidth="109.0" promptText="Phone number" style="-fx-background-color: transparent; -fx-border-color: #fff9ea; -fx-border-width: 0px 0px 2px;" fx:id="telefon">
+          <font>
+            <Font name="Bell MT" size="12.0" />
+          </font>
+        </TextField>
+        <Button layoutX="254.0" layoutY="28.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="67.0" onAction="#onAddOrderButtonClick" style="-fx-background-color: #fff9ea;" text="Comanda" textFill="RED">
+          <font>
+            <Font name="Rockwell" size="10.0" />
+          </font>
+        </Button>
+
+      </children>
+    </AnchorPane>
+  </bottom>
+</BorderPane>

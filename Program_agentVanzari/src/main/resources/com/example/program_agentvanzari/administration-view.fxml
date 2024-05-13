@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.program_agentvanzari.AdministrationController">
+    <left>
+        <AnchorPane prefHeight="400.0" prefWidth="299.0" style="-fx-background-color: #fff9ea;" BorderPane.alignment="CENTER">
+            <children>
+                <TableView fx:id="tabel" layoutX="34.0" layoutY="58.0" prefHeight="293.0" prefWidth="232.0" style="-fx-background-color: trasparent;">
+                    <columns>
+                        <TableColumn maxWidth="20.0" prefWidth="75.0" resizable="false" text="ID" />
+                        <TableColumn prefWidth="75.0" resizable="false" text="Name" />
+                        <TableColumn maxWidth="40.0" prefWidth="75.0" resizable="false" text="Price" />
+                        <TableColumn maxWidth="20.0" prefWidth="75.0" resizable="false" text="nr." />
+                    </columns>
+                </TableView>
+                <Text layoutX="86.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Products Archive">
+                    <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="338.0" prefWidth="400.0" style="-fx-background-color: #ffeec3;" BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="namefield" layoutX="14.0" layoutY="43.0" prefHeight="24.0" prefWidth="109.0" promptText="name" style="-fx-background-color: transparent; -fx-border-color: #fff9ea; -fx-border-width: 0px 0px 2px;">
+                    <font>
+                        <Font name="Bell MT" size="12.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="pricefield" layoutX="14.0" layoutY="67.0" prefHeight="24.0" prefWidth="109.0" promptText="price" style="-fx-background-color: transparent; -fx-border-color: #fff9ea; -fx-border-width: 0px 0px 2px;">
+                    <font>
+                        <Font name="Bell MT" size="12.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="quantityfield" layoutX="14.0" layoutY="93.0" prefHeight="24.0" prefWidth="109.0" promptText="nr." style="-fx-background-color: transparent; -fx-border-color: #fff9ea; -fx-border-width: 0px 0px 2px;">
+                    <font>
+                        <Font name="Bell MT" size="12.0" />
+                    </font>
+                </TextField>
+                <TextField layoutX="14.0" layoutY="117.0" prefHeight="24.0" prefWidth="109.0" style="-fx-background-color: transparent; -fx-border-color: #fff9ea; -fx-border-width: 0px 0px 2px;">
+                    <font>
+                        <Font name="Bell MT" size="12.0" />
+                    </font>
+                </TextField>
+                <TextField layoutX="14.0" layoutY="141.0" prefHeight="24.0" prefWidth="109.0" style="-fx-background-color: transparent; -fx-border-color: #fff9ea; -fx-border-width: 0px 0px 2px;">
+                    <font>
+                        <Font name="Bell MT" size="12.0" />
+                    </font>
+                </TextField>
+                <TextField layoutX="14.0" layoutY="165.0" prefHeight="24.0" prefWidth="109.0" style="-fx-background-color: transparent; -fx-border-color: #fff9ea; -fx-border-width: 0px 0px 2px;">
+                    <font>
+                        <Font name="Bell MT" size="12.0" />
+                    </font>
+                </TextField>
+                <TextField layoutX="14.0" layoutY="191.0" prefHeight="24.0" prefWidth="109.0" style="-fx-background-color: transparent; -fx-border-color: #fff9ea; -fx-border-width: 0px 0px 2px;">
+                    <font>
+                        <Font name="Bell MT" size="12.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="delid" layoutX="63.0" layoutY="291.0" prefHeight="24.0" prefWidth="56.0" promptText="id" style="-fx-background-color: transparent; -fx-border-color: #fff9ea; -fx-border-width: 0px 0px 2px;">
+                    <font>
+                        <Font name="Bell MT" size="12.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="upidfield" layoutX="161.0" layoutY="43.0" prefHeight="24.0" prefWidth="109.0" promptText="id" style="-fx-background-color: transparent; -fx-border-color: #fff9ea; -fx-border-width: 0px 0px 2px;">
+                    <font>
+                        <Font name="Bell MT" size="12.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="upnamefield" layoutX="161.0" layoutY="67.0" prefHeight="24.0" prefWidth="109.0" promptText="name" style="-fx-background-color: transparent; -fx-border-color: #fff9ea; -fx-border-width: 0px 0px 2px;">
+                    <font>
+                        <Font name="Bell MT" size="12.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="uppricefield" layoutX="161.0" layoutY="93.0" prefHeight="24.0" prefWidth="109.0" promptText="price" style="-fx-background-color: transparent; -fx-border-color: #fff9ea; -fx-border-width: 0px 0px 2px;">
+                    <font>
+                        <Font name="Bell MT" size="12.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="upquantityfield" layoutX="161.0" layoutY="117.0" prefHeight="24.0" prefWidth="109.0" promptText="nr." style="-fx-background-color: transparent; -fx-border-color: #fff9ea; -fx-border-width: 0px 0px 2px;">
+                    <font>
+                        <Font name="Bell MT" size="12.0" />
+                    </font>
+                </TextField>
+                <TextField layoutX="161.0" layoutY="141.0" prefHeight="24.0" prefWidth="109.0" style="-fx-background-color: transparent; -fx-border-color: #fff9ea; -fx-border-width: 0px 0px 2px;">
+                    <font>
+                        <Font name="Bell MT" size="12.0" />
+                    </font>
+                </TextField>
+                <TextField layoutX="161.0" layoutY="165.0" prefHeight="24.0" prefWidth="109.0" style="-fx-background-color: transparent; -fx-border-color: #fff9ea; -fx-border-width: 0px 0px 2px;">
+                    <font>
+                        <Font name="Bell MT" size="12.0" />
+                    </font>
+                </TextField>
+                <TextField layoutX="161.0" layoutY="191.0" prefHeight="24.0" prefWidth="109.0" style="-fx-background-color: transparent; -fx-border-color: #fff9ea; -fx-border-width: 0px 0px 2px;">
+                    <font>
+                        <Font name="Bell MT" size="12.0" />
+                    </font>
+                </TextField>
+                <TextField layoutX="161.0" layoutY="215.0" prefHeight="24.0" prefWidth="109.0" style="-fx-background-color: transparent; -fx-border-color: #fff9ea; -fx-border-width: 0px 0px 2px;">
+                    <font>
+                        <Font name="Bell MT" size="12.0" />
+                    </font>
+                </TextField>
+                <Button layoutX="43.0" layoutY="252.0" mnemonicParsing="false" onAction="#onAddButtonClick" style="-fx-background-color: transparent;" text="Add" textFill="RED">
+                    <font>
+                        <Font name="Bell MT" size="12.0" />
+                    </font>
+                </Button>
+                <Button layoutX="190.0" layoutY="252.0" mnemonicParsing="false" onAction="#onUpdateButtonClick" style="-fx-background-color: transparent;" text="Update" textFill="RED">
+                    <font>
+                        <Font name="Bell MT" size="12.0" />
+                    </font>
+                </Button>
+                <Button layoutX="14.0" layoutY="292.0" mnemonicParsing="false" onAction="#onDeleteButtonClick" style="-fx-background-color: transparent;" text="Delete" textFill="RED">
+                    <font>
+                        <Font name="Bell MT" size="12.0" />
+                    </font>
+                </Button>
+                <Text layoutX="56.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" wrappingWidth="12.5" />
+                <Button layoutX="16.0" layoutY="321.0" mnemonicParsing="false" onAction="#onFilterButtonClick" style="-fx-background-color: transparent;" text="Filter" textFill="RED">
+                    <font>
+                        <Font name="Bell MT" size="12.0" />
+                    </font>
+                </Button>
+                <Text layoutX="55.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" wrappingWidth="12.5" />
+                <TextField fx:id="srcidfield" layoutX="63.0" layoutY="320.0" prefHeight="24.0" prefWidth="24.0" promptText="id" style="-fx-background-color: transparent; -fx-border-color: #fff9ea; -fx-border-width: 0px 0px 2px;">
+                    <font>
+                        <Font name="Bell MT" size="12.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="srcquantityfield" layoutX="194.0" layoutY="320.0" prefHeight="24.0" prefWidth="26.0" promptText="nr." style="-fx-background-color: transparent; -fx-border-color: #fff9ea; -fx-border-width: 0px 0px 2px;">
+                    <font>
+                        <Font name="Bell MT" size="12.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="srcnamefield" layoutX="91.0" layoutY="320.0" prefHeight="24.0" prefWidth="47.0" promptText="name" style="-fx-background-color: transparent; -fx-border-color: #fff9ea; -fx-border-width: 0px 0px 2px;">
+                    <font>
+                        <Font name="Bell MT" size="12.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="srcpricefield" layoutX="148.0" layoutY="320.0" prefHeight="24.0" prefWidth="40.0" promptText="price" style="-fx-background-color: transparent; -fx-border-color: #fff9ea; -fx-border-width: 0px 0px 2px;">
+                    <font>
+                        <Font name="Bell MT" size="12.0" />
+                    </font>
+                </TextField>
+            </children>
+        </AnchorPane>
+    </right>
+</BorderPane>
